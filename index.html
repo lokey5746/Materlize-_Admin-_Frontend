@@ -113,9 +113,25 @@
 		</div>
 	</section>
 	<!-- End of stats Section -->
-	
-<!--	Preloader section-->
-<!--	End of Preloader section-->
+
+	<!--	Preloader section-->
+	<div class="loader preloader-wrapper big active">
+		<div class="spinner-layer spinner-blue-only">
+			<div class="circle-clipper left">
+				<div class="circle"></div>
+			</div>
+			<div class="gap-patch">
+				<div class="circle"></div>
+			</div>
+			<div class="circle-clipper right">
+				<div class="circle"></div>
+			</div>
+		</div>
+	</div>
+	<!--	End of Preloader section-->
+
+
+
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
@@ -124,10 +140,14 @@
 		$('.section').hide();
 
 		setTimeout(function() {
-			
+
 			$(document).ready(function() {
 				//show section
 				$('.section').fadeIn();
+
+				//hide preloader
+				$('.loader').fadeOut();
+
 				//Init Side nav
 				$('.button-collapse').sideNav();
 
@@ -136,7 +156,7 @@
 					$(this).prop('Counter', 0).animate({
 						Counter: $(this).text()
 					}, {
-						duration: 3000,
+						duration: 1000,
 						easing: 'swing',
 						step: function(now) {
 							$(this).text(Math.ceil(now));
@@ -145,6 +165,6 @@
 				});
 
 			});
-		}, 1000);
+		}, 3000);
 	</script>
 </body></html>
