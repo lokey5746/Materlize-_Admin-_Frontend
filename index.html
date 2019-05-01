@@ -13,7 +13,7 @@
 	<title>Admin Page</title>
 </head>
 
-<body>
+<body class="grey lighten-4">
 	<!-- Navigation section-->
 	<nav class="blue darken-2">
 		<div class="container">
@@ -23,11 +23,11 @@
 					<i class="material-icons">menu</i>
 				</a>
 				<ul class="right hide-on-med-and-down">
-					<li class="active"><a href="#">Dashboard</a></li>
+					<li class="active"><a href="index.html">Dashboard</a></li>
 					<li><a href="post.html">Posts</a></li>
-					<li><a href="categories.html">Categories</a></li>
-					<li><a href="comment.html">Comments</a></li>
-					<li><a href="user.html">Users</a></li>
+					<li><a href="category.html">Categories</a></li>
+					<li><a href="comments.html">Comments</a></li>
+					<li><a href="users.html">Users</a></li>
 				</ul>
 				<!--				side nav-->
 				<ul class="side-nav" id="side-nav">
@@ -47,11 +47,11 @@
 							</a>
 						</div>
 					</li>
-					<li><a href="#"><i class="material-icons">dashboard</i>Dashboard</a></li>
+					<li><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
 					<li><a href="post.html">Posts</a></li>
-					<li><a href="categories.html">Categories</a></li>
-					<li><a href="comment.html">Comments</a></li>
-					<li><a href="user.html">Users</a></li>
+					<li><a href="category.html">Categories</a></li>
+					<li><a href="comments.html">Comments</a></li>
+					<li><a href="users.html">Users</a></li>
 					<li>
 						<div class="divider"></div>
 					</li>
@@ -114,6 +114,153 @@
 	</section>
 	<!-- End of stats Section -->
 
+	<!--chart section-->
+	<section class="section section-visitors blue lighten-4">
+		<div class="row">
+			<div class="col s12 m6 l8">
+				<div class="card-panel">
+					<div id="chartcontainer" style="height: 300px; width: 100%;"></div>
+				</div>
+			</div>
+			<div class="col s12 m6 l4">
+				<!--			latest comments-->
+				<ul class="collection with-header latest-comments">
+					<li class="collection-header">
+						<h5>Latest Comments</h5>
+
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="img/person1.jpg" alt="" class="circle"><span class="title">Lokey Dangi</span>
+						<p>"On the other hand, we denounce with righteous indignation and dislike ,</p>
+						<a href="#" class="approve green-text">Approve</a> |
+						<a href="#" class="deny red-text">Deny</a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="img/person2.jpg" alt="" class="circle"><span class="title">Raji Dangi</span>
+						<p>"On the other hand, we denounce with righteous indignation and dislike</p>
+						<a href="#" class="approve green-text">Approve</a> |
+						<a href="#" class="deny red-text">Deny</a>
+					</li>
+
+					<li class="collection-item avatar">
+						<img src="img/person3.jpg" alt="" class="circle"><span class="title">Hasil Dangi</span>
+						<p>"On the other hand, we denounce with righteous indignation and dislike </p>
+						<a href="#" class="approve green-text">Approve</a> |
+						<a href="#" class="deny red-text">Deny</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- End of chart section-->
+
+	<!--section Recent post and todolist-->
+	<section class="section section-recent">
+		<div class="row">
+			<div class="col s12 l8 m6">
+				<div class="card">
+					<div class="card-content">
+						<span class="card-title">Recent Posts</span>
+						<table class="striped">
+							<thead>
+								<tr>
+									<th>Title</th>
+									<th>Category</th>
+									<th> </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Post One</td>
+									<td>Web Developement</td>
+									<td>
+										<a href="detail.html" class="btn blue lighten-2">Details</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Post Two</td>
+									<td>Graphic Design</td>
+									<td>
+										<a href="detail.html" class="btn blue lighten-2">Details</a>
+									</td>
+								</tr>
+								<tr>
+									<td>Post Three</td>
+									<td>Web Developement</td>
+									<td>
+										<a href="detail.html" class="btn blue lighten-2">Details</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l4 m6">
+				<div class="card">
+					<div class="card-content">
+						<span class="card-title">Quick TodoList</span>
+						<form id="todo-form">
+							<div class="input-field">
+								<input id="todo" type="text" placeholder="Add Items">
+							</div>
+						</form>
+						<ul class="collection todos">
+							<li class="collection-item">
+								<div>Todo One
+									<a href="#!" class="secondary-content delete">
+										<i class="material-icons">close</i>
+									</a>
+								</div>
+							</li>
+							<li class="collection-item">
+								<div>Todo Two
+									<a href="#!" class="secondary-content delete">
+										<i class="material-icons">close</i>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of section Recent post and todolist-->
+
+	<!-- footer section -->
+	<footer class="section blue darken-2 white-text center">
+		<p>Madmin Panel Copyright &copy; 2019</p>
+	</footer>
+	<!-- End of footer section -->
+
+	<!-- Fixed Action Button section-->
+	<div class="fixed-action-btn">
+		<a class="modal-trigger btn-floating btn-large red">
+			<i class="material-icons">add</i>
+		</a>
+		<ul>
+			<li>
+				<a href="#postmodal" class="btn-floating blue">
+					<i class="material-icons">mode_edit</i>
+				</a>
+			</li>
+			<li>
+				<a href="#category-modal" class="btn-floating blue">
+					<i class="material-icons">folder</i>
+				</a>
+			</li>
+			<li>
+				<a href="#user-modal" class="btn-floating blue">
+					<i class="material-icons">supervisor_account</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--End of Fixed Action Button section-->
+
 	<!--	Preloader section-->
 	<div class="loader preloader-wrapper big active">
 		<div class="spinner-layer spinner-blue-only">
@@ -130,11 +277,45 @@
 	</div>
 	<!--	End of Preloader section-->
 
-
+	<!-- post modal section-->
+	<div id="postmodal" class="modal">
+		<div class="modal-content">
+			<h4>Add Post</h4>
+			<form>
+				<div class="input-field">
+					<input type="text" id="title">
+					<label for="title">Title</label>
+				</div>
+				<div class="input-field">
+					<select>
+						<option value="" disabled selected>Select Option</option>
+						<option value="1">Web Development</option>
+						<option value="2">Web Developer</option>
+						<option value="3">Graphic Design</option>
+						<option value="4">Mobile Development</option>
+					</select>
+					<label>Category</label>
+				</div>
+				<div class="input-field">
+					<textarea name="body" id="body" class="materialize-textarea">
+				</textarea>
+					<label for="body">Body</label>
+				</div>
+			</form>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
+			</div>
+		</div>
+	</div>
+	<!--End post modal section-->
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<!--	Import Canvas Javascript-->
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script src="js/chart.js"></script>
 	<script>
 		//section hide
 		$('.section').hide();
@@ -151,6 +332,11 @@
 				//Init Side nav
 				$('.button-collapse').sideNav();
 
+				//init modal
+				$('.modal').modal();
+
+				//init select
+				$('select').material_select();
 				//counter
 				$('.count').each(function() {
 					$(this).prop('Counter', 0).animate({
@@ -162,6 +348,40 @@
 							$(this).text(Math.ceil(now));
 						}
 					});
+				});
+				//Comments Approve and Deny
+				$('.approve').click(function(e) {
+
+					Materialize.toast('Comment Approved', 3000);
+					e.preventDefault();
+				});
+
+				$('.deny').click(function(e) {
+
+					Materialize.toast('Comment Denied', 3000);
+					e.preventDefault();
+				});
+
+
+				//Quick todo list
+				$('#todo-form').submit(function(e) {
+					const output = `<li class="collection-item">
+							<div>${$('#todo').val()}
+							<a href="#!" class="secondary-content delete">
+								<i class="material-icons">close</i>
+							</a>
+							</div>
+						</li>`;
+					$('.todos').append(output);
+					Materialize.toast('To do Added', 3000);
+					e.preventDefault();
+				});
+
+				//Delete todo list
+				$('.todos').on('click', '.delete', function(e) {
+					$(this).parent().parent().remove();
+					Materialize.toast('Todo Removed', 3000);
+					e.preventDefault();
 				});
 
 			});

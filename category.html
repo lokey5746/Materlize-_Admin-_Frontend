@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Category Page</title>
+</head>
+
+<body class="grey lighten-4">
+	<!-- Navigation section-->
+	<nav class="blue darken-2">
+		<div class="container">
+			<div class="nav-wrapper">
+				<a href="index.html" class="brand-logo">Madmin</a>
+				<a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html">Dashboard</a></li>
+					<li><a href="post.html">Posts</a></li>
+					<li class="active"><a href="category.html">Categories</a></li>
+					<li><a href="comments.html">Comments</a></li>
+					<li><a href="users.html">Users</a></li>
+				</ul>
+				<!--				side nav-->
+				<ul class="side-nav" id="side-nav">
+					<li>
+						<div class="user-view">
+							<div class="background">
+								<img src="img/ocean.jpg" class="responsive-img">
+							</div>
+							<a href="#">
+								<img src="img/person1.jpg" class="circle">
+							</a>
+							<a href="#">
+								<span class="name white-text">Lokendra Dangi</span>
+							</a>
+							<a href="#">
+								<span class="email white-text">pachar.com@gmail.com</span>
+							</a>
+						</div>
+					</li>
+					<li><a href="#"><i class="material-icons">dashboard</i>Dashboard</a></li>
+					<li><a href="post.html">Posts</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="comment.html">Comments</a></li>
+					<li><a href="user.html">Users</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li>
+						<a class="subheader">Account Controls</a>
+					</li>
+					<li>
+						<a class="waves-effect" href="login.html">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--End of Navigation section-->
+
+	<!--  section category-->
+	<section class="section section-category grey lighten-4">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Categories</span>
+							<table class="striped">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Date Created</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Web Developement</td>
+										<td>Jan 1, 2018</td>
+										<td>
+											<a href="detail.html" class="btn blue lighten-2">Details</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Graphic Design</td>
+										<td>Jan 3 , 2018</td>
+										<td>
+											<a href="detail.html" class="btn blue lighten-2">Details</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Web Developement</td>
+										<td>Jan 4, 2018</td>
+										<td>
+											<a href="detail.html" class="btn blue lighten-2">Details</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="card-action">
+							<ul class="pagination">
+								<li class="disabled">
+									<a href="" class="blue-text">
+										<i class="material-icons">chevron_left</i>
+									</a>
+								</li>
+								<li class="active blue lighten-2">
+									<a class="white-text" href="#">1</a>
+								</li>
+								<li class="waves-effect">
+									<a class="blue-text" href="#">2</a>
+								</li>
+								<li class="waves-effect">
+									<a class="blue-text" href="#">3</a>
+								</li>
+								<li class="waves-effect">
+									<a class="blue-text" href="#">4</a>
+								</li>
+								<li class="waves-effect">
+									<a class="blue-text" href="#">5</a>
+								</li>
+								<li class="waves-effect">
+									<a href="" class="blue-text">
+										<i class="material-icons">chevron_right</i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- footer section -->
+	<footer class="section blue darken-2 white-text center">
+		<p>Madmin Panel Copyright &copy; 2019</p>
+	</footer>
+	<!-- End of footer section -->
+
+	<!-- Fixed Action Button section-->
+	<div class="fixed-action-btn">
+		<a href="#post-modal" class=" modal-trigger btn-floating btn-large red">
+			<i class="material-icons">add</i>
+		</a>
+	</div>
+	<!--End of Fixed Action Button section-->
+
+	<!-- Add post modal-->
+	<div id="post-modal" class="modal">
+		<div class="modal-content">
+			<h4>Add Category</h4>
+			<form>
+				<div class="input-field">
+					<input type="text" id="title">
+					<label for="title">Title</label>
+				</div>
+			</form>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close btn blue white-text">Submit</a>
+			</div>
+		</div>
+	</div>
+	<!--End of Add post modal-->
+
+
+	<!--	Preloader section-->
+	<div class="loader preloader-wrapper big active">
+		<div class="spinner-layer spinner-blue-only">
+			<div class="circle-clipper left">
+				<div class="circle"></div>
+			</div>
+			<div class="gap-patch">
+				<div class="circle"></div>
+			</div>
+			<div class="circle-clipper right">
+				<div class="circle"></div>
+			</div>
+		</div>
+	</div>
+	<!--	End of Preloader section-->
+
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+
+	<script>
+		//section hide
+		$('.section').hide();
+
+		setTimeout(function() {
+
+			$(document).ready(function() {
+				//show section
+				$('.section').fadeIn();
+
+				//hide preloader
+				$('.loader').fadeOut();
+
+				//Init Side nav
+				$('.button-collapse').sideNav();
+
+				//init modal
+				$('.modal').modal();
+
+				//init select
+				$('select').material_select();
+
+
+			});
+		}, 3000);
+	</script>
+</body></html>
